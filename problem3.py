@@ -201,7 +201,7 @@ Gambler = MultiCohort(
     prob_head=[0.5]*NUM2  # [p, p, ....]
 )
 # simulate all cohorts
-Gambler.simulate(NUM)
+Gambler.simulate(NUM2)
 print("The average expected reward for the Gambler is:", Gambler.get_overall_mean_reward())
 # print projection interval
 print('95% projection interval',Gambler.get_PI_mean_reward(0.05))
